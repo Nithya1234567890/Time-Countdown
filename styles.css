@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.2)),url('https://nbpo.nl/wp-content/uploads/2020/07/Zandloper.png');
+    background-size: cover;
+    color: #fff;
+}
+.set-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.head{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+input{
+    padding: 20px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #d8ecff;
+}
+button{
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: larger;
+    background-color: #5c7ea0;
+    border: 1px solid rgb(255, 255, 255);
+}
+button:hover{
+    background-color: #20466d;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    color: #fff;
+}
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    background: #222222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter:blur(10px);
+}
+
+#countdown div {
+    margin: 0 10px;
+}
+
+#countdown span {
+    font-size: 2em;
+}
+@media(max-width:450px){
+    #countdown{
+        width: 320px;
+    }
+}
+@media(max-width:380px){
+    #countdown{
+        width: 300px;
+    }
+}
